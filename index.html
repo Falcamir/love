@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Our Story</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Quicksand:wght@400;500;700&family=Caveat:wght@600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- Floating Hearts -->
+    <div id="floatingHearts"></div>
+
+    <!-- ================================= -->
+    <!-- Loading Screen -->
+    <!-- ================================= -->
+
+    <section id="loadingScreen" class="screen active">
+
+        <div class="loadingCard">
+
+            <div class="loadingHeart">
+                💛
+            </div>
+
+            <h1>Just one more moment...</h1>
+
+            <p>
+
+                I'm getting everything ready
+                for you.
+
+            </p>
+
+            <div class="loadingBar">
+
+                <div class="loadingProgress"></div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================================= -->
+    <!-- Book Cover -->
+    <!-- ================================= -->
+
+    <section id="coverScreen" class="screen hidden">
+
+        <div id="bookCover">
+
+            <div class="bookPages"></div>
+
+            <div class="coverAmbient"></div>
+
+            <div class="coverOverlay">
+
+                <div class="coverHeart">
+                    💛
+                </div>
+
+                <h1 class="coverTitle">
+
+                    Our Story
+
+                </h1>
+
+                <div class="coverDivider"></div>
+
+                <p class="coverSubtitle">
+
+                    A little book written
+                    from my heart.
+
+                </p>
+
+                <button id="openBookButton">
+
+                    Begin Our Story 💛
+
+                </button>
+
+            </div>
+
+            <div class="coverShine"></div>
+
+        </div>
+
+    </section>
+
+    <!-- ================================= -->
+    <!-- Storybook -->
+    <!-- ================================= -->
+
+    <main id="storybook" class="hidden">
+
+        <div id="bookWrapper">
+
+            <div id="book">
+
+                <div id="pageShadow"></div>
+
+                <div id="pageContainer"></div>
+
+                <div id="pageGlow"></div>
+
+                <div id="secretSweep"></div>
+
+            </div>
+
+            <div id="chapterBookmarks"></div>
+
+        </div>
+
+    </main>
+
+    <!-- ================================= -->
+    <!-- Photo Viewer -->
+    <!-- ================================= -->
+
+    <div id="photoViewer" class="hidden">
+
+        <img id="viewerImage" alt="Memory">
+
+    </div>
+
+    <!-- ================================= -->
+    <!-- Background Music -->
+    <!-- ================================= -->
+
+    <audio id="backgroundMusic" loop>
+
+        <source src="assets/music/our-song.mp3" type="audio/mpeg">
+
+    </audio>
+
+    <audio id="proposalMusic" loop>
+
+        <source src="assets/music/proposal-song.mp3" type="audio/mpeg">
+
+    </audio>
+
+    <audio id="edgeSound" preload="auto">
+        <source src="assets/music/edge.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="pageTurnSound" preload="auto">
+
+        <source src="assets/music/page-turn.mp3" type="audio/mpeg">
+
+    </audio>
+
+    <audio id="secretUnlockSound" src="assets/music/secret-unlock.wav" preload="auto"></audio>
+
+    <audio id="photoOpenSound" preload="auto">
+        <source src="assets/music/photo-open.wav" type="audio/wav">
+    </audio>
+
+    <audio id="bookmarkSound" preload="auto">
+        <source src="assets/music/bookmark.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="paperOpenSound" preload="auto">
+        <source src="assets/music/paper-open.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Scripts -->
+
+    <script src="config.js"></script>
+
+    <script src="story.js"></script>
+
+    <script src="renderer.js"></script>
+
+    <script src="viewer.js"></script>
+
+    <script src="navigation.js"></script>
+
+    <script src="effects.js"></script>
+
+    <script src="script.js"></script>
+
+    <div id="rotateWarning">
+        <div class="rotateContent">
+            <div class="rotateIcon">📱</div>
+            <h2>Please rotate your phone</h2>
+            <p>This little book is best enjoyed in portrait mode. 💛</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
